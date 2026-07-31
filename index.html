@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Figma</title>
 </head>
 <body>
 
-    <header>
-         
+    <header class="header">
+        <div class="header_inner">
+            <a href="#" class="header_logo">
+                <img src="./images/Group 1(1).svg" alt="Contacter-fhoto" class="red-logo">
+                <img src="./images/Group 1.png" alt="Contacter-fhoto-blue" class="blue-logo">
+            </a>
+
+            <nav class="header_nav" id="header-nav">
+                <ul class="header_menu">
+                    <li class="header_menu-item">
+                        <a href="#" class="header_menu-link header_menu-link--active">Reception</a>
+                    </li>
+                    <li class="header_menu-item header_menu-item--dropdown">
+                        <a href="#" class="header_menu-link">
+                            Brands
+                            <i class="fa-solid fa-chevron-down header_chevron"></i>
+                        </a>
+                    </li>
+                    <li class="header_menu-item header_menu-item--dropdown">
+                        <a href="#" class="header_menu-link">
+                            Percel
+                            <i class="fa-solid fa-chevron-down header_chevron"></i>
+                        </a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="#" class="header_menu-link">Tips &amp; News</a>
+                    </li>
+                </ul>
+
+                <button type="button" class="header_search" aria-label="Search">
+                    <img src="./images/Search.png" alt="">
+                </button>
+            </nav>
+
+            <button type="button" class="header_burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+                <img src="./images/menu_alt_01.png" alt="">
+            </button>
+        </div>
     </header>
-    
+
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
