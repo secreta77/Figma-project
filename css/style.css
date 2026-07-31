@@ -52,7 +52,7 @@ html {
   font-family: inherit;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #3A4352;
+  color: #3a4352;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -65,7 +65,7 @@ html {
 }
 .header_chevron {
   font-size: 1rem;
-  color: #3A4352;
+  color: #3a4352;
 }
 .header_search {
   display: flex;
@@ -95,6 +95,49 @@ html {
   width: 2.4rem;
   height: 2.4rem;
 }
+
+main .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 1rem 1rem;
+}
+main .wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+main .wrapper .left-side h1 {
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  max-width: 41rem;
+  color: #091327;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+main .wrapper .left-side p {
+  font-size: clamp(1.6rem, 5vw, 1.8rem);
+  max-width: 43.5rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+main .wrapper .left-side button {
+  font-size: 1.6rem;
+  background-color: #ff7571;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 1.6rem 0.8rem;
+  width: 18rem;
+}
+main .wrapper .right-side img {
+  max-width: 58.8rem;
+  width: 100%;
+}
+main .wrapper .right-side .main-blue-photo {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header_nav {
     position: absolute;
@@ -104,7 +147,7 @@ html {
     flex-direction: column;
     align-items: stretch;
     border-bottom: 1px solid black;
-    background: #FF7571;
+    background: #ff7571;
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.08);
     padding: 1.6rem 2rem 2.4rem;
     z-index: 10;
@@ -136,6 +179,29 @@ html {
     display: none;
   }
   .header .blue-logo {
+    display: block;
+  }
+  main .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  main .wrapper .left-side {
+    margin-right: 0;
+  }
+  main .wrapper .left-side h1 {
+    margin-bottom: 2.4rem;
+    max-width: 38rem;
+  }
+  main .wrapper .left-side p {
+    max-width: 38rem;
+  }
+  main .wrapper .left-side button {
+    background-color: #4181fc;
+  }
+  main .wrapper .right-side .main-red-photo {
+    display: none;
+  }
+  main .wrapper .right-side .main-blue-photo {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */
